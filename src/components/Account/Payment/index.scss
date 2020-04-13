@@ -1,0 +1,64 @@
+@import "../../../styles/variables";
+
+.payment-wrap {
+  max-width: 310px;
+  margin-top: 40px;
+}
+
+.payment-plans {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  &-wrp {
+    width: 100%;
+  }
+
+  &__text {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 130%;
+    color: #929292;
+    margin-bottom: 0;
+
+    a {
+      color: #35B986;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+        color: #35B986;
+      }
+    }
+  }
+}
+
+.payment-cancel {
+  font-size: 14px;
+  line-height: 130%;
+  color: #929292;
+  
+  &__btn {
+    background: transparent;
+    display: block;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 17px;
+    color: #35B986;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 15px 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+@media screen and (max-width: map_get($breakpoints, 'xs')) {
+  .payment-wrap {
+    margin: 20px auto;
+    max-width: $xsAccountFormWidth;
+  }
+}

@@ -1,0 +1,14 @@
+.plan-card {
+  background: #F7F7F7;
+  border-radius: 3px;
+  padding: 25px 18px;
+  font-size: 16px;
+  line-height: 130%;
+  color: #7C7C7C;
+
+  &__em {
+    font-weight: bold;
+    color: #35B986;
+    display: inline-block;
+  }
+}

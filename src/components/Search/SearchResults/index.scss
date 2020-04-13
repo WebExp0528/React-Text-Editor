@@ -1,0 +1,38 @@
+.search__results {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+
+  &-block {
+    &-title {
+      font-size: 10px;
+      line-height: 1;
+      text-transform: uppercase;
+      color: rgba(0,0,0,.3);
+    }
+
+    & + & {
+      margin-top: 25px;
+    }
+
+    .story-item {
+      &__title {
+        font-size: 16px;
+        font-weight: 800;
+      }
+    }
+
+    .folder-item {
+      &__title {
+        font-size: 16px;
+        font-weight: 800;
+      }
+    }
+  }
+
+  .sho-tooltip {
+    width: 280px;
+  }
+}

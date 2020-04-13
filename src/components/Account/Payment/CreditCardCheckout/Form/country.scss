@@ -1,0 +1,43 @@
+.country-input {
+  padding: 0;
+
+  .form-control.is-invalid {
+    padding-right: 0;
+  }
+
+  & #{&}__control {
+    border: 1px solid transparent;
+    background-color: #F7F7F7;
+    line-height: 1.2;
+    color: #242424;
+    padding: 13px 20px;
+    margin: 0;
+    height: auto;
+
+    &:hover {
+      border: 1px solid transparent;
+    }
+  }
+
+  & #{&}__value-container {
+    padding: 0;
+    line-height: 1;
+
+    [class$="Input"] {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  & #{&}__placeholder {
+    margin: 0;
+  }
+
+  & #{&}__dropdown-indicator {
+    padding: 0;
+  }
+
+  & #{&}__indicator-separator {
+    display: none;
+  }
+}

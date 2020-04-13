@@ -1,0 +1,10 @@
+.menu {
+  &--fluid {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .menu-list__item + .menu-list__item {
+    margin-left: 30px;
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../../styles/variables";
+
+.referral {
+  padding: 40px 0;
+
+  &-img {
+    max-width: 100%;
+    &__wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

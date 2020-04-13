@@ -1,0 +1,66 @@
+@import "../../../styles/variables";
+
+.account-edit {
+  margin-top: 40px;
+  max-width: 310px;
+
+  &__form {
+    margin-bottom: 30px;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 13px;
+    }
+
+    &-title {
+      font-weight: bold;
+      color: #242424;
+      line-height: 1;
+    }
+
+    &-change {
+      font-size: 14px;
+      color: #8A8A8A;
+      background: none;
+      border: none;
+      outline: none;
+      line-height: 1;
+
+      &:hover {
+        opacity: .8;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &-save {      
+      font-size: 14px;
+      color: #35B986;
+      background: none;
+      border: none;
+      outline: none;
+
+      &:hover {
+        opacity: .8;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+    &-save.cancel{
+      color: gray;
+    }
+  }
+}
+
+@media screen and (max-width: map_get($breakpoints, 'xs')) {
+  .account-edit {
+    margin: 20px auto;
+    max-width: $xsAccountFormWidth;
+  }
+}

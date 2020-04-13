@@ -1,0 +1,153 @@
+.auth-block {
+  max-width: 310px;
+  margin: 0 170px 0 auto;
+}
+
+@media screen and (max-width: 991px) {
+  .auth-block {
+    margin: 0 auto;
+  }
+}
+
+.registration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 0 100%;
+
+  &-bg {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    &__img {
+      max-width: 100%;
+    }
+  }
+
+  &--logo.logo {
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  &-pills {
+    margin: 40px 0 0;
+
+    &__item {
+      width: 50%;
+      text-align: center;
+    }
+
+    & &__link {
+      color: #9F9F9F;
+      border-bottom: 1px solid #EBEBEB;
+      border-radius: 0;
+    }
+
+    & &__link.active {
+      background-color: transparent;
+      border-bottom-color: #35B986;
+      color: #242424;
+    }
+  }
+
+  &-tab-pane {
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .registration {
+    &-bg {
+      justify-content: center;
+    }
+  }
+}
+
+.auth-form {
+  &__title {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  &__input {
+    border: 1px solid transparent;
+    background-color: #F7F7F7;
+    line-height: 1.2;
+    color: #242424;
+    padding: 13px 20px;
+    margin: 0;
+    height: auto;
+
+    &:disabled {
+      background-color: #F7F7F7;
+      color: rgba(36,36,36,.5);
+    }
+
+    &-group {
+      border-radius: 3px;
+    }
+
+    &:focus {
+      background-color: #F7F7F7;
+    }
+
+    &::placeholder {
+      color: rgba(14,14,14,0.5);
+    }
+
+    &-wrap {
+      margin: 10px 0 15px;
+      position: relative;
+    }
+
+    &-block {
+      margin: 30px 0;
+
+      &:first-child {
+        margin-top: 0px;
+      }
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+
+    &.is-invalid {
+      background-image: none;
+    }
+  }
+
+  &__submit {
+    width: 50%;
+    margin: 30px auto 20px;
+    display: block;
+    line-height: 1.2;
+    padding: 10px;
+  }
+
+  &__footnote {
+    color: rgba(0, 0, 0, .3);
+    font-size: 14px;
+    text-align: center;
+  }
+
+  &__forgot {
+    text-align: center;
+
+    &-link {
+      color: rgba(0, 0, 0, .3);
+      font-size: 15px;
+      text-decoration: underline;
+
+      &:hover {
+        color: rgba(0, 0, 0, .6);
+      }
+
+      &--success {
+        color: #35B986;
+      }
+    }
+  }
+}

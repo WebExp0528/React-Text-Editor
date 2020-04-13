@@ -1,0 +1,58 @@
+.payment-card {
+  user-select: none;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  width: 145px;
+  height: 45px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #242424;
+  padding: 10px;
+  cursor: pointer;
+  display: inline-flex;
+
+  & + & {
+    margin-left: auto;
+  }
+
+  &--big {
+    height: 110px;
+    flex-direction: column;
+  }
+
+  &__hero {
+    font-size: 24px;
+    line-height: 130%;
+    color: #3E3E3E;
+  }
+
+  &__sub {
+    font-size: 16px;
+    line-height: 130%;
+    color: #929292;
+  }
+
+  &--active {
+    border-color: #35B986;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 15px;
+      left: 10px;
+      width: 15px;
+      height: 15px;
+      background-image: url('/img/check.svg');
+    }
+
+    &.payment-card--big::before {
+      top: 10px;
+      right: 10px;
+      left: auto;
+    }
+  }
+}

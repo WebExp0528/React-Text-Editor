@@ -1,0 +1,28 @@
+.text-settings {
+  width: 210px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #EBEBEB;
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 0 0;
+    &--first {
+      margin: 30px 0 0 0;
+    }
+  }
+  &__key {
+    font-weight: bold;
+  }
+  &__value {
+    &--green {
+      color: #35B986;
+    }
+    &--max {
+      color: #C8C8C8;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}

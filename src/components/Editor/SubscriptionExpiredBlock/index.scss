@@ -1,0 +1,33 @@
+.subscription-expired {
+  &__header {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    color: #2E2E2E;
+    margin-bottom: 10px;
+  }
+
+  &__body {
+    font-size: 16px;
+    line-height: 130%;
+    text-align: right;
+    color: #696969;
+    margin-bottom: 15px;
+  }
+
+  &__footer {
+    font-size: 16px;
+    line-height: 130%;
+    text-align: right;
+  }
+
+  &__link {
+    color: #35B986;
+    text-decoration: underline;
+
+    &:hover {
+      color: #35b986;
+    }
+  }
+}

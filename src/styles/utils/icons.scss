@@ -1,0 +1,63 @@
+@import '../variables';
+
+.icon {
+  display: inline-block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+
+  &--chevron {
+    width: 15px;
+    height: 15px;
+    background-image: url("#{$imgBasePath}Vector.svg");
+
+    &-up {
+      transform: rotate(90deg);
+    }
+
+    &-right {
+      transform: rotate(180deg);
+    }
+
+    &-down {
+      transform: rotate(270deg);
+    }
+  }
+
+  &--arrow {
+    width: 15px;
+    height: 15px;
+
+    &-right {
+      background-image: url("#{$imgBasePath}arrowRight.svg");
+    }
+  }
+  &--dots {
+    width: 25px;
+    height: 5px;
+    background-image: url("#{$imgBasePath}Dots.svg");
+  }
+
+  &--folder {
+    width: 14px;
+    height: 11px;
+    margin-right: 5px;
+    background-image: url("#{$imgBasePath}folder.svg");
+  }
+
+  &--close {
+    width: 21px;
+    height: 21px;
+    background-image: url("#{$imgBasePath}close.svg");
+
+    &-sm {
+      width: 11px;
+      height: 11px;
+    }
+
+    &-white {
+      background-image: url("#{$imgBasePath}close_white.svg");
+    }
+  }
+}

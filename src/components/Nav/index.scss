@@ -1,0 +1,72 @@
+@import "../../styles/variables";
+
+.menu {
+  border-bottom: 1px solid #EBEBEB;
+  max-width: $contentMaxWidth;
+  width: calc(100% - #{$asideWidth + $asideMargin});
+  height: $navHeight;
+
+  &-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    &__item {
+      display: inline-block;
+      position: relative;
+
+      & + & {
+        margin-left: 30px;
+      }
+
+      &--folder-single {
+        &::before {
+          content: '>';
+          display: block;
+          position: absolute;
+          left: -19px;
+          color: #ADADAD;
+        }
+      }
+    }
+
+    &__link {
+      color: #9F9F9F;
+      position: relative;
+      margin-bottom: 5px;
+      display: inline-block;
+
+      &:hover {
+        opacity: .7;
+        color: #9F9F9F;
+        text-decoration: none;
+      }
+      
+      &--folder {
+        color: #242424;
+      }
+
+      &--active {
+        color: #242424;
+
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: -6px;
+          left: 0;
+          right: 0;
+          height: 1px;
+          background-color: #35B986;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map_get($breakpoints, 'xs')){
+  .menu {
+    width: 100%;
+  }
+}
+

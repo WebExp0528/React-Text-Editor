@@ -1,0 +1,14 @@
+.auth-form__input-passtoggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 20px;
+  font-size: 16px;
+  line-height: 1.2;
+  cursor: pointer;
+  box-sizing: content-box;
+  height: calc(1em * 1.2);
+}

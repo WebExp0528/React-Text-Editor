@@ -1,0 +1,459 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato-Medium.eot');
+  src: url('/fonts/Lato-Medium.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Lato-Medium.woff2') format('woff2'),
+  url('/fonts/Lato-Medium.woff') format('woff'),
+  url('/fonts/Lato-Medium.ttf') format('truetype'),
+  url('/fonts/Lato-Medium.svg#Lato-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato-SemiboldItalic.eot');
+  src: url('/fonts/Lato-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Lato-SemiboldItalic.woff2') format('woff2'),
+  url('/fonts/Lato-SemiboldItalic.woff') format('woff'),
+  url('/fonts/Lato-SemiboldItalic.ttf') format('truetype'),
+  url('/fonts/Lato-SemiboldItalic.svg#Lato-SemiboldItalic') format('svg');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato-MediumItalic.eot');
+  src: url('/fonts/Lato-MediumItalic.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Lato-MediumItalic.woff2') format('woff2'),
+  url('/fonts/Lato-MediumItalic.woff') format('woff'),
+  url('/fonts/Lato-MediumItalic.ttf') format('truetype'),
+  url('/fonts/Lato-MediumItalic.svg#Lato-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato-Light.eot');
+  src: url('/fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Lato-Light.woff2') format('woff2'),
+  url('/fonts/Lato-Light.woff') format('woff'),
+  url('/fonts/Lato-Light.ttf') format('truetype'),
+  url('/fonts/Lato-Light.svg#Lato-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato-Bold.eot');
+  src: url('/fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Lato-Bold.woff2') format('woff2'),
+  url('/fonts/Lato-Bold.woff') format('woff'),
+  url('/fonts/Lato-Bold.ttf') format('truetype'),
+  url('/fonts/Lato-Bold.svg#Lato-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato-Black.eot');
+  src: url('/fonts/Lato-Black.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Lato-Black.woff2') format('woff2'),
+  url('/fonts/Lato-Black.woff') format('woff'),
+  url('/fonts/Lato-Black.ttf') format('truetype'),
+  url('/fonts/Lato-Black.svg#Lato-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato-LightItalic.eot');
+  src: url('/fonts/Lato-LightItalic.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Lato-LightItalic.woff2') format('woff2'),
+  url('/fonts/Lato-LightItalic.woff') format('woff'),
+  url('/fonts/Lato-LightItalic.ttf') format('truetype'),
+  url('/fonts/Lato-LightItalic.svg#Lato-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato-Italic.eot');
+  src: url('/fonts/Lato-Italic.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Lato-Italic.woff2') format('woff2'),
+  url('/fonts/Lato-Italic.woff') format('woff'),
+  url('/fonts/Lato-Italic.ttf') format('truetype'),
+  url('/fonts/Lato-Italic.svg#Lato-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato-BoldItalic.eot');
+  src: url('/fonts/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Lato-BoldItalic.woff2') format('woff2'),
+  url('/fonts/Lato-BoldItalic.woff') format('woff'),
+  url('/fonts/Lato-BoldItalic.ttf') format('truetype'),
+  url('/fonts/Lato-BoldItalic.svg#Lato-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato-Thin.eot');
+  src: url('/fonts/Lato-Thin.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Lato-Thin.woff2') format('woff2'),
+  url('/fonts/Lato-Thin.woff') format('woff'),
+  url('/fonts/Lato-Thin.ttf') format('truetype'),
+  url('/fonts/Lato-Thin.svg#Lato-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato Hairline';
+  src: url('/fonts/Lato-Hairline.eot');
+  src: url('/fonts/Lato-Hairline.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Lato-Hairline.woff2') format('woff2'),
+  url('/fonts/Lato-Hairline.woff') format('woff'),
+  url('/fonts/Lato-Hairline.ttf') format('truetype'),
+  url('/fonts/Lato-Hairline.svg#Lato-Hairline') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato-ThinItalic.eot');
+  src: url('/fonts/Lato-ThinItalic.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Lato-ThinItalic.woff2') format('woff2'),
+  url('/fonts/Lato-ThinItalic.woff') format('woff'),
+  url('/fonts/Lato-ThinItalic.ttf') format('truetype'),
+  url('/fonts/Lato-ThinItalic.svg#Lato-ThinItalic') format('svg');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato Hairline';
+  src: url('/fonts/Lato-HairlineItalic.eot');
+  src: url('/fonts/Lato-HairlineItalic.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Lato-HairlineItalic.woff2') format('woff2'),
+  url('/fonts/Lato-HairlineItalic.woff') format('woff'),
+  url('/fonts/Lato-HairlineItalic.ttf') format('truetype'),
+  url('/fonts/Lato-HairlineItalic.svg#Lato-HairlineItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato-HeavyItalic.eot');
+  src: url('/fonts/Lato-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Lato-HeavyItalic.woff2') format('woff2'),
+  url('/fonts/Lato-HeavyItalic.woff') format('woff'),
+  url('/fonts/Lato-HeavyItalic.ttf') format('truetype'),
+  url('/fonts/Lato-HeavyItalic.svg#Lato-HeavyItalic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato-Semibold.eot');
+  src: url('/fonts/Lato-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Lato-Semibold.woff2') format('woff2'),
+  url('/fonts/Lato-Semibold.woff') format('woff'),
+  url('/fonts/Lato-Semibold.ttf') format('truetype'),
+  url('/fonts/Lato-Semibold.svg#Lato-Semibold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato-BlackItalic.eot');
+  src: url('/fonts/Lato-BlackItalic.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Lato-BlackItalic.woff2') format('woff2'),
+  url('/fonts/Lato-BlackItalic.woff') format('woff'),
+  url('/fonts/Lato-BlackItalic.ttf') format('truetype'),
+  url('/fonts/Lato-BlackItalic.svg#Lato-BlackItalic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato-Regular.eot');
+  src: url('/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Lato-Regular.woff2') format('woff2'),
+  url('/fonts/Lato-Regular.woff') format('woff'),
+  url('/fonts/Lato-Regular.ttf') format('truetype'),
+  url('/fonts/Lato-Regular.svg#Lato-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato-Heavy.eot');
+  src: url('/fonts/Lato-Heavy.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Lato-Heavy.woff2') format('woff2'),
+  url('/fonts/Lato-Heavy.woff') format('woff'),
+  url('/fonts/Lato-Heavy.ttf') format('truetype'),
+  url('/fonts/Lato-Heavy.svg#Lato-Heavy') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yrsa';
+  src: url('/fonts//fonts/Yrsa-SemiBold.eot');
+  src: url('/fonts/Yrsa-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Yrsa-SemiBold.woff2') format('woff2'),
+  url('/fonts/Yrsa-SemiBold.woff') format('woff'),
+  url('/fonts/Yrsa-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yrsa';
+  src: url('/fonts/Yrsa-Bold.eot');
+  src: url('/fonts/Yrsa-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Yrsa-Bold.woff2') format('woff2'),
+  url('/fonts/Yrsa-Bold.woff') format('woff'),
+  url('/fonts/Yrsa-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yrsa';
+  src: url('/fonts/Yrsa-Light.eot');
+  src: url('/fonts/Yrsa-Light.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Yrsa-Light.woff2') format('woff2'),
+  url('/fonts/Yrsa-Light.woff') format('woff'),
+  url('/fonts/Yrsa-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yrsa';
+  src: url('/fonts/Yrsa-Medium.eot');
+  src: url('/fonts/Yrsa-Medium.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Yrsa-Medium.woff2') format('woff2'),
+  url('/fonts/Yrsa-Medium.woff') format('woff'),
+  url('/fonts/Yrsa-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yrsa';
+  src: url('/fonts/Yrsa-Regular.eot');
+  src: url('/fonts/Yrsa-Regular.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Yrsa-Regular.woff2') format('woff2'),
+  url('/fonts/Yrsa-Regular.woff') format('woff'),
+  url('/fonts/Yrsa-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  min-width: 375px;
+  color: #000;
+  flex: 1 0 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  position: relative;
+  flex-direction: column;
+}
+
+.btn {
+  font-size: 16px;
+  line-height: 1;
+  padding: 7px .75rem;
+  height: 40px;
+
+  &-success {
+    background-color: #35B986;
+    border: 1px solid #35B986;
+
+    &:hover {
+      background-color: #35B986;
+      border-color: #35B986;
+      opacity: .8;
+    }
+
+    &:focus {
+      background-color: #35B986;
+    }
+
+    &:active {
+      background-color: #35B986;
+    }
+
+    &[disabled] {
+      background-color: #35B986;
+      cursor: not-allowed;
+    }
+  }
+
+  &-outline {
+    &-success {
+      border-color: #35B986;
+      color: #35B986;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+    }
+
+    &-secondary {
+      border-color: #E7E7E7;
+      background-color: #fff;
+      color: rgba(0,0,0,.5);
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+    }
+  }
+
+  &-unstyled {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+
+.alert {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: .5rem 1rem;
+  border-radius: 0;
+  border: none;
+
+  &-dismissible .close {
+    position: static;
+    padding: 0 10px;
+    margin-right: -15px;
+    opacity: 1;
+    font-weight: 300;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &-danger {
+    color: #fff;
+    background-color: #FF6060;
+  }
+
+  &-success {
+    color: #fff;
+    background-color: #35B986;
+  }
+}
+
+.modal {
+  &-content {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  &-header {
+    border: none;
+    padding: 20px 30px 0;
+  }
+
+  &-title {
+    color: #2D2D2D;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  &-body {
+    padding: 20px 30px;
+  }
+
+  &-footer {
+    border: none;
+    padding: 15px 30px;
+    background-color: #F8F8F8;
+  }
+}
+
+.form-control {
+  &.is-invalid {
+    border-color: #FF6060;
+  }
+
+  .was-validated &:invalid {
+    border-color: #FF6060;
+  }
+}
+
+.invalid-feedback {
+  color: #FF6060;
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,54 @@
+@import "../../styles/variables";
+
+.aside {
+  width: $asideWidth;
+  margin-left: $asideMargin;
+  position: absolute;
+  right: 15px;
+  top: $navHeight;
+
+  .aside-btn {
+    width: $asideWidth;
+    margin-bottom: 15px;
+    padding: 7px .75rem;
+
+    &.btn-outline-success:hover {
+      background-color: #fff;
+      border-color: #35B986;
+      color: #35B986;
+    }
+
+    &.btn-outline-secondary:hover {
+      background-color: #fff;
+      border-color: #E7E7E7;
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+
+@media screen and (max-width: map_get($breakpoints, 'xs')){
+  .aside {
+    width: auto;
+    position: static;
+    margin: 0;
+
+    &-btn {
+      &:first-child {
+        order: 1;
+      };
+
+      &s {
+        display: flex;
+      }
+
+      & + & {
+        margin-right: 20px;
+      }
+    }
+
+    .aside-btn {
+      margin-bottom: 25px;
+    }
+  }
+}

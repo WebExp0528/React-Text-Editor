@@ -1,0 +1,75 @@
+@import "../../../../styles/variables"
+
+.referral-hiw
+  border-top: 1px solid #EBEBEB
+  border-bottom: 1px solid #EBEBEB
+  padding: 50px 0
+  margin-top: 50px
+
+  &__header
+    text-align: center
+    margin-bottom: 30px
+
+  &__title
+    font-weight: bold
+    font-size: 18px
+    line-height: 22px
+    color: #000000
+
+
+  &__body
+    display: flex
+    justify-content: center
+
+  &__item
+    max-width: 165px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+
+    & + &
+      margin-left: 90px
+
+    &-title
+      font-weight: bold
+      font-size: 16px
+      line-height: 19px
+      text-align: center
+      color: #000000
+      margin: 20px 0 9px
+
+    &-number
+      width: 50px
+      height: 50px
+      display: flex
+      justify-content: center
+      align-items: center
+      font-weight: bold
+      font-size: 16px
+      line-height: 19px
+      color: #FFFFFF
+      border-radius: 50%
+      background-color: #35B986
+
+
+    &-desc
+      font-size: 16px
+      line-height: 130%
+      text-align: center
+      color: #929292
+
+
+@media screen and (max-width: map_get($breakpoints, 'xs'))
+  .referral-hiw
+    border: none
+    padding: 0
+    margin: 20px 0 0
+
+    &__body
+      flex-direction: column
+      align-items: center
+
+    &__item
+      & + &
+        margin: 30px 0 0

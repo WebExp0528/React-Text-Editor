@@ -1,0 +1,28 @@
+.invite-form {
+  &__btn {
+    padding: 13px 25px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    height: auto;
+
+    &-wrap {
+      margin-left: 15px;
+      margin-top: 10px;
+      display: flex;
+      align-self: flex-start;
+    }
+  }
+  .auth-form__input {
+    width: 100%;
+
+    &-wrap {
+      flex: 1;
+    }
+  }
+
+  &__row {
+    flex: 1;
+  }
+}

@@ -1,0 +1,78 @@
+@import "../../styles/variables";
+
+$accountLinkWidth: 36px;
+
+.header {
+  margin: 40px 0;
+
+  &-sa-wrap {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.account-link {
+  width: $accountLinkWidth;
+  height: $accountLinkWidth;
+  border-radius: 50%;
+  justify-self: flex-end;
+  background-color: #E0E0E0;
+  font-size: 15px;
+  display: flex;
+  color: #353535;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+  flex-grow: 0;
+
+  &:hover {
+    opacity: .8;
+    color: #353535;
+    text-decoration: none;
+  }
+
+  &__wrap {
+    position: relative;
+
+    .sho-tooltip {
+      margin-top: 15px;
+      width: 100px;
+
+      .sho-tooltip-content {
+        padding: 15px 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map_get($breakpoints, 'lg')){
+  .account-link {
+    &__wrap {
+      .sho-tooltip {
+        left: auto;
+        transform: none;
+        right: 0;
+
+        &__content {
+          &::before {
+            left: auto;
+            right: ($accountLinkWidth / 2) - 7px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map_get($breakpoints, 'xs')){
+  .header {
+    margin: 20px 0;
+  }
+}

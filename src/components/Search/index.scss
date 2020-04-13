@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+
+.search {
+  margin: 0 20px;
+  position: relative;
+  display: flex;
+
+  &__input {
+    font-size: 15px;
+    line-height: 18px;
+    padding: 9px 20px 9px 45px;
+    border-radius: 39px;
+    width: 280px;
+    color: #343434;
+    border-color: #E7E7E7;
+
+    &::placeholder {
+      color: #B1B1B1
+    }
+
+    &-wrap {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 14px;
+        height: 14px;
+        background-image: url("#{$imgBasePath}search.svg");
+        left: 20px;
+        top: calc(50% - 7px);
+      }
+    }
+  }
+
+  .loader {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: map_get($breakpoints, 'xs')){
+  .search {
+    display: none;
+  }
+}

@@ -1,0 +1,31 @@
+.sho-dropdown-menu__item {
+  font-size: 14px;
+  line-height: 17px;
+  color: #A0A0A0;
+  align-self: flex-start;
+  text-align: left;
+  width: 100%;
+
+  &:hover {
+    color: #35B986;
+    text-decoration: none;
+  }
+
+  & + & {
+    margin-top: 12px;
+  }
+
+  a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &--remove {
+    &:hover {
+      color: #FF6060;
+    }
+  }
+}
