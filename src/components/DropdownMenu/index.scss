@@ -1,0 +1,16 @@
+.sho-dropdown-menu {
+  &__toggle {
+    cursor: pointer;
+  }
+
+  &__tooltip {
+    margin-top: 4px;
+    width: 120px;
+
+    .sho-tooltip__content {
+      padding: 15px 18px;
+      font-size: 14px;
+      color: #A0A0A0;
+    }
+  }
+}

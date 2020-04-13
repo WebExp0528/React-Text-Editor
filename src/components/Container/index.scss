@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+
+.container {
+  &--custom {
+    max-width: 1030px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: map_get($breakpoints, 'xs')) {
+  .container {
+    &--custom {
+      padding: 0 25px;
+    }
+  }
+}

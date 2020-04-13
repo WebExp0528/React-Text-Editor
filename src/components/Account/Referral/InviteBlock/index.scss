@@ -1,0 +1,39 @@
+@import "../../../../styles/variables";
+
+.invite-block {
+  max-width: 425px;
+  
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 7px;
+  }
+
+  &__desc {
+    font-size: 16px;
+    line-height: 130%;
+    color: #929292;
+    margin-bottom: 15px;
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #35B986;
+    cursor: pointer;
+    margin-top: 20px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #35B986;
+  }
+}
+
+@media screen and (max-width: map_get($breakpoints, 'xs')) {
+  .invite-block {
+    &__link {
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.credit-card-checkout {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+
+  &__btn {
+    font-weight: bold;
+    margin: 30px auto 0;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 13px 18px;
+    height: auto;
+  }
+
+  &__desc {
+    font-size: 14px;
+    line-height: 130%;
+    color: #929292;
+    margin-bottom: 0;
+
+    a {
+      color: #35B986;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+        color: #35B986;
+      }
+    }
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .col-6:first-child .form-group {
+    margin-right: -5px;
+  }
+
+  .col-6:last-child .form-group {
+    margin-left: -5px;
+  }
+
+}

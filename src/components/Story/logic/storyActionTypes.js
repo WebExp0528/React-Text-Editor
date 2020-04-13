@@ -1,0 +1,13 @@
+export const STORY_LOADING = 'STORY_LOADING';
+export const STORY_LOADED = 'STORY_LOADED';
+export const STORY_ERROR = 'STORY_ERROR';
+
+export const STORY_LOAD_SINGLE = 'STORY_LOAD_SINGLE';
+export const STORY_LOADED_SINGLE = 'STORY_LOADED_SINGLE';
+
+export const STORY_UPDATE = 'STORY_UPDATE';
+export const STORY_UPDATED = 'STORY_UPDATED';
+export const STORY_DELETE = 'STORY_DELETE';
+export const STORY_DELETED = 'STORY_DELETED';
+export const STORY_CREATE = 'STORY_CREATE';
+export const STORY_CREATED = 'STORY_CREATED';

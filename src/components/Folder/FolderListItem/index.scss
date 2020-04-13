@@ -1,0 +1,70 @@
+@import "../../../styles/variables";
+
+.folder-item {
+  padding: 18px 0;
+  border-bottom: 1px solid #EBEBEB;
+  font-size: 14px;
+  color: #9c9c9c;
+  position: relative;
+  
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #242424;
+    cursor: pointer;
+
+    &:hover {
+      color: #242424;
+      opacity: .6;
+      text-decoration: none;
+    }
+  }
+
+  &__description {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__menu {
+    position: absolute;
+    right: 0;
+    height: 15px;
+    top: calc(50% - 15px / 2);
+  }
+
+  &--compact {
+    border: none;
+    padding: 5px 0;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &__title {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: map_get($breakpoints, 'xs')) {
+  .folder-item {
+    padding-right: 0;
+
+    &__title {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &__menu {
+      position: relative;
+      display: inline-block;
+      margin-left: 10px;
+
+      .icon {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+}

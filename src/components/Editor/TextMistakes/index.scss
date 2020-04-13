@@ -1,0 +1,49 @@
+.count-mistakes {
+  width: 210px;
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    margin: 15px 0 0 0;
+    align-items: center;
+    &--first {
+      margin: 30px 0 0 0;
+    }
+  }
+  &__key {
+    font-weight: bold;
+    padding: 6px 8px;
+    color: white;
+    opacity: 0.8;
+    border-radius: 2px;
+    flex: 0 0 30px;
+    width: 30px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &--blue {
+      background: #1ABCFE;
+    }
+    &--green {
+      background: #34C98F;
+    }
+    &--violet {
+      background: #A159FD;
+    }
+    &--yellow {
+      background: #FBC512;
+    }
+    &--red {
+      background: #FF6060;
+    }
+  }
+  &__value {
+    font-size: 16px;
+    color: #696969;
+    margin-left: 10px;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}

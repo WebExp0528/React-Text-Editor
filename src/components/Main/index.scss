@@ -1,0 +1,22 @@
+@import "../../styles/variables";
+
+.content {
+  max-width: $contentMaxWidth;
+  width: calc(100% - #{$asideWidth + $asideMargin});
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &--fluid {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: map_get($breakpoints, 'xs')){
+  .content {
+    width: 100%;
+  }
+}

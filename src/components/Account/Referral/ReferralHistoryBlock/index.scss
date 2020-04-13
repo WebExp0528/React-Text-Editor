@@ -1,0 +1,67 @@
+@import "../../../../styles/variables";
+
+$itemSpacing: 17px;
+
+.referral-history {
+  margin-top: 40px;
+
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+  }
+
+  &__header {
+    margin-bottom: 15px;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: calc(100% / 3 - #{$itemSpacing * 2 / 3});
+    height: 100px;
+
+    & + & {
+      margin-left: $itemSpacing;
+    }
+
+    &-number {
+      color: #35B986;
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    &-text {
+      font-size: 14px;
+      line-height: 130%;
+      color: #929292;
+    }
+  }
+}
+
+@media screen and (max-width: map_get($breakpoints, 'sm')) {
+  $itemSpacing: 10px;
+
+  .referral-history {
+    &__item {
+      border-color: transparent;
+      width: calc(100% / 3 - #{$itemSpacing * 2 / 3});
+
+      & + & {
+        margin-left: $itemSpacing;
+      }
+    }
+  }
+}

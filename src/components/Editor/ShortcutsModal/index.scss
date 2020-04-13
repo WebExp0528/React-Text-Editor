@@ -1,0 +1,33 @@
+.sho-shortcuts {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fafafa;
+  z-index: 1010;
+  // min-width: 1250px;
+
+  &__body {
+    margin: 0 auto;
+    max-width: 1440px;
+    background-color: #fafafa;
+  }
+
+  .sho-shortcuts__close {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+  }
+
+  &__img-wrap {
+    margin: 0 auto;
+    text-align: center;
+    overflow-x: auto;
+  }
+}

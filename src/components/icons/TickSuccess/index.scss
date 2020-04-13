@@ -1,0 +1,12 @@
+.tick {
+  width: 38px;
+  height: 38px;
+  display: inline-block;
+
+  &--success {
+    border-radius: 50%;
+    border: 1px solid #CFCFCF;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}

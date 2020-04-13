@@ -1,0 +1,38 @@
+.sho-tooltip {
+  position: absolute;
+  display: none;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+
+  &.show {
+    display: block;
+  }
+
+  &__content {
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    white-space: normal;
+    font-size: 16px;
+    color: #595959;
+    line-height: 20px;
+
+    &::before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      left: calc(50% - 7px);
+      top: -7px;
+      width: 14px;
+      height: 14px;
+      box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 3px;
+      background-color: #fff;
+      transform: rotate(315deg);
+    }
+  }
+}

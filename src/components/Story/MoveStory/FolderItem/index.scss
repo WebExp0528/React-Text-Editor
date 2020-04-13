@@ -1,0 +1,32 @@
+.folder-item {
+  &.folder-item--move {
+    border-top: 1px solid #EBEBEB;
+    border-bottom: none;
+    cursor: pointer;
+    padding: 20px 0;
+
+    &:last-child {
+      border-bottom: 1px solid #EBEBEB;
+
+    }
+
+    .folder-item {
+      &__title {
+        font-size: 16px;
+        line-height: 1;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.folder-item.folder-item--selected {
+  background-color: rgba(183, 183, 183,.1);
+  margin-left: -30px;
+  margin-right: -30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
