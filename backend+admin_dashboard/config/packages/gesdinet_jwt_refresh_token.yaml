@@ -1,0 +1,3 @@
+gesdinet_jwt_refresh_token:
+  user_identity_field: email
+  user_provider: security.user.provider.concrete.database

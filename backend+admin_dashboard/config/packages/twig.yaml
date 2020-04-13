@@ -1,0 +1,9 @@
+twig:
+    default_path: '%kernel.project_dir%/templates'
+    debug: '%kernel.debug%'
+    strict_variables: '%kernel.debug%'
+    globals:
+        frontend_host: '%frontend.host%'
+        frontend_confirm_url: '%frontend.confirm_url%'
+        frontend_reset_url: '%frontend.reset_url%'
+        frontend_invite_url: '%frontend.invite_url%'

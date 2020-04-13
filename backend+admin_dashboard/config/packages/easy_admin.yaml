@@ -1,0 +1,17 @@
+easy_admin:
+    site_name: ShoSho
+    entities:
+        User:
+            class: App\Entity\User
+            disabled_actions: ['new']
+            form:
+                fields: ['firstName', 'lastName', 'email', 'roles', 'enabled', 'created', 'updated']
+            
+            list:
+                fields: ['id', 'firstName', 'lastName', 'email', 'enabled', 'created', 'updated']
+        Folder:
+            class: App\Entity\Folder
+        Story:
+            class: App\Entity\Story
+        Plan:
+            class: App\Entity\Plan
