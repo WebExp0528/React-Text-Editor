@@ -1,0 +1,56 @@
+security:
+    encoders:
+        App\Entity\User: bcrypt
+    providers:
+        database:
+            entity:
+                class: App\Entity\User
+                property: email
+
+    firewalls:
+        refresh:
+            pattern:  ^/api/token/refresh
+            stateless: true
+            anonymous: true
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        api:
+            pattern: ^/api
+            stateless: true
+            anonymous: true
+            json_login:
+                check_path: /api/login_check
+                success_handler: lexik_jwt_authentication.handler.authentication_success
+                failure_handler: lexik_jwt_authentication.handler.authentication_failure
+            guard:
+                authenticators:
+                    - App\Security\TokenAuthenticator
+                    
+            user_checker: App\Security\UserEnabledChecker
+        default:
+            anonymous: ~
+            guard:
+                authenticators:
+                    - App\Security\AppAuthenticator
+                entry_point: App\Security\AppAuthenticator
+
+
+    # Easy way to control access for large sections of your site
+    # Note: Only the *first* access control that matches will be used
+    access_control:
+         - { path: ^/api/stripe/webhooks, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+         - { path: ^/api/token/refresh, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+         - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+         - { path: ^/_bo, roles: ROLE_ADMIN }
+         - { path: ^/api/docs, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+         - { path: ^/api/users/reset, roles: IS_AUTHENTICATED_ANONYMOUSLY, methods: [POST] }
+         - { path: ^/api/users/update-password, roles: IS_AUTHENTICATED_ANONYMOUSLY, methods: [PUT] }
+         - { path: ^/api/users/confirm, roles: IS_AUTHENTICATED_ANONYMOUSLY, methods: [POST] }
+         - { path: ^/api/register, roles: IS_AUTHENTICATED_ANONYMOUSLY, methods: [POST] }
+         - { path: ^/api/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+         - { path: ^/api, roles: IS_AUTHENTICATED_FULLY }
+    role_hierarchy:
+        ROLE_WRITER: ROLE_USER
+        ROLE_ADMIN: [ROLE_WRITER, ROLE_USER]
+        ROLE_SUPERADMIN: ROLE_ADMIN
