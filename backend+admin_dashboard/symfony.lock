@@ -180,6 +180,15 @@
     "jean85/pretty-package-versions": {
         "version": "1.2"
     },
+    "laminas/laminas-code": {
+        "version": "3.4.1"
+    },
+    "laminas/laminas-eventmanager": {
+        "version": "3.2.1"
+    },
+    "laminas/laminas-zendframework-bridge": {
+        "version": "1.0.3"
+    },
     "lcobucci/jwt": {
         "version": "3.2.5"
     },
@@ -248,6 +257,9 @@
     },
     "pagerfanta/pagerfanta": {
         "version": "v2.1.2"
+    },
+    "php": {
+        "version": "7.4"
     },
     "php-cs-fixer/diff": {
         "version": "v1.3.0"
@@ -416,6 +428,9 @@
             "src/Kernel.php"
         ]
     },
+    "symfony/http-client": {
+        "version": "v4.4.7"
+    },
     "symfony/http-foundation": {
         "version": "v4.2.5"
     },
@@ -469,6 +484,9 @@
     },
     "symfony/polyfill-php72": {
         "version": "v1.11.0"
+    },
+    "symfony/polyfill-php73": {
+        "version": "v1.15.0"
     },
     "symfony/process": {
         "version": "v4.2.7"
@@ -636,6 +654,9 @@
     },
     "twig/twig": {
         "version": "v2.8.1"
+    },
+    "webimpress/safe-writer": {
+        "version": "2.0.1"
     },
     "webmozart/assert": {
         "version": "1.4.0"
