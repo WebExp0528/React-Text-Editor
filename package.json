@@ -6,7 +6,7 @@
     "@editorjs/paragraph": "^2.5.0",
     "@stfy/react-editor.js": "^0.1.5",
     "automated-readability": "^1.0.3",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "axios-auth-refresh": "^1.0.6",
     "bootstrap": "^4.3.1",
     "connected-react-router": "^6.4.0",
