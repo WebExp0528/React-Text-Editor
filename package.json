@@ -15,7 +15,7 @@
     "formik": "^1.5.4",
     "history": "^4.9.0",
     "html2json": "^1.0.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jsx-to-html": "^1.1.0",
     "moment": "^2.24.0",
     "mousetrap": "^1.6.3",
