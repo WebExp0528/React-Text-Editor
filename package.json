@@ -17,7 +17,7 @@
     "html2json": "^1.0.2",
     "jquery": "^3.5.0",
     "jsx-to-html": "^1.1.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "mousetrap": "^1.6.3",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
